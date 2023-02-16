@@ -1,78 +1,116 @@
 import '../assets/css/Calculator.css';
+import React from 'react';
+import PropTypes from 'prop-types';
+import calculate from '../logic/calculate';
+
+function Button(props) {
+  Button.defaultProps = {
+    name: '',
+    className: '',
+    onClick: () => { },
+  };
+
+  Button.propTypes = {
+    name: PropTypes.string,
+    className: PropTypes.string,
+    onClick: PropTypes.func,
+  };
+
+  const { name, className, onClick } = props;
+
+  return (
+    <button type="button" name={name} className={className} onClick={onClick}>
+      {name}
+    </button>
+  );
+}
 
 function Calculator() {
+  const [state, setState] = React.useState({
+    total: '0',
+    next: null,
+  });
+
+  function handleClick(e) {
+    setState(calculate(state, e.target.name));
+  }
+
+  const { total, next } = state;
+  let result = '0';
+  result = next || total;
+
   return (
     <section id="calculator-section">
       <table>
         <tbody>
           <tr className="result">
-            <td> 0 </td>
+            <td>{result}</td>
           </tr>
           <tr className="row-buttons">
             <td>
-              <button className="gray-button" type="button"> AC </button>
+              <Button name="AC" className="gray-button" onClick={(e) => handleClick(e)} />
             </td>
             <td>
-              <button className="gray-button" type="button"> +/- </button>
+              <Button name="+/-" className="gray-button" onClick={(e) => handleClick(e)} />
             </td>
             <td>
-              <button className="gray-button" type="button"> % </button>
+              <Button name="%" className="gray-button" onClick={(e) => handleClick(e)} />
             </td>
             <td>
-              <button className="orange-button" type="button"> / </button>
-            </td>
-          </tr>
-          <tr className="row-buttons">
-            <td>
-              <button className="gray-button" type="button"> 7 </button>
-            </td>
-            <td>
-              <button className="gray-button" type="button"> 8 </button>
-            </td>
-            <td>
-              <button className="gray-button" type="button"> 9 </button>
-            </td>
-            <td>
-              <button className="orange-button" type="button"> x </button>
+              <Button name="÷" className="orange-button" onClick={(e) => handleClick(e)} />
             </td>
           </tr>
           <tr className="row-buttons">
             <td>
-              <button className="gray-button" type="button"> 4 </button>
+              <Button name="7" className="gray-button" onClick={(e) => handleClick(e)} />
             </td>
             <td>
-              <button className="gray-button" type="button"> 5 </button>
+              <Button name="8" className="gray-button" onClick={(e) => handleClick(e)} />
             </td>
             <td>
-              <button className="gray-button" type="button"> 6 </button>
+              <Button name="9" className="gray-button" onClick={(e) => handleClick(e)} />
             </td>
             <td>
-              <button className="orange-button" type="button"> - </button>
+              <Button name="x" className="orange-button" onClick={(e) => handleClick(e)} />
             </td>
           </tr>
           <tr className="row-buttons">
             <td>
-              <button className="gray-button" type="button"> 1 </button>
+              <Button name="4" className="gray-button" onClick={(e) => handleClick(e)} />
             </td>
             <td>
-              <button className="gray-button" type="button"> 2 </button>
+              <Button name="5" className="gray-button" onClick={(e) => handleClick(e)} />
             </td>
             <td>
-              <button className="gray-button" type="button"> 3 </button>
+              <Button name="6" className="gray-button" onClick={(e) => handleClick(e)} />
             </td>
             <td>
-              <button className="orange-button" type="button"> + </button>
+              <Button name="-" className="orange-button" onClick={(e) => handleClick(e)} />
+            </td>
+          </tr>
+          <tr className="row-buttons">
+            <td>
+              <Button name="1" className="gray-button" onClick={(e) => handleClick(e)} />
+            </td>
+            <td>
+              <Button name="2" className="gray-button" onClick={(e) => handleClick(e)} />
+            </td>
+            <td>
+              <Button name="3" className="gray-button" onClick={(e) => handleClick(e)} />
+            </td>
+            <td>
+              <Button name="+" className="orange-button" onClick={(e) => handleClick(e)} />
             </td>
           </tr>
           <tr className="last-row-buttons">
             <td>
-              <button className="gray-button" type="button"> 0 </button>
+              <Button name="0" className="gray-button" onClick={(e) => handleClick(e)} />
             </td>
             <td>
-              <button className="gray-button" type="button"> . </button>
+              <Button name="." className="gray-button" onClick={(e) => handleClick(e)} />
             </td>
             <td>
-              <button className="orange-button" type="button"> = </button>
+              <Button name="=" className="orange-button" onClick={(e) => handleClick(e)} />
             </td>
           </tr>
         </tbody>
