@@ -1,10 +1,105 @@
-.App {
-  background-color: #282c34;
-  min-height: 100vh;
+.calc-section {
+  padding: 0 0.5rem;
+  max-width: 500px;
+  flex: 1;
+}
+
+.calculator {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.screen {
+  background-color: #868694;
+  padding: 1rem 0.3rem;
+  font-size: 2rem;
+  color: #fff;
+  width: 100%;
+  text-align: end;
+}
+
+.btn {
+  padding: 2rem;
+  color: black;
+  font-size: 1rem;
+  width: 25%;
+  background-color: #e0e0e0;
+  border: none;
+  border-right: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
+}
+
+.span-2 {
+  width: 50%;
+}
+
+.bg-orange {
+  background-color: #f4913e;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+nav {
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+nav h1 {
+  font-size: 2.5rem;
+}
+
+.nav_buttons_container {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.nav_buttons {
+  border-right: solid 2px black;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav_buttons:last-child {
+  border: none;
+}
+
+.home {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+.home h2 {
+  margin: 0 0.5rem 3rem;
+}
+
+.calc_main {
+  display: flex;
+  padding: 0.25rem 2rem;
+  justify-content: space-between;
+}
+
+.calc_title {
+  flex: 1;
+}
+
+.calc_title h2 {
+  margin: 0;
+}
+
+.quote_main {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 50vh;
+}
+
+.quote {
+  width: 80%;
+  font-size: 1.2rem;
 }
