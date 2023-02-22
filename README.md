@@ -1,7 +1,7 @@
 ﻿![](https://img.shields.io/badge/Academic-blue)
 ![](https://img.shields.io/badge/HTML-red)
 ![](https://img.shields.io/badge/JavaScript-yellow)
-![](https://img.shields.io/badge/React-yellow)
+![](https://img.shields.io/badge/React-green)
 
   <h3><b>README FILE</b></h3>
 
@@ -37,6 +37,11 @@ By building this application, you will learn how to use React.
 
 
 ## 🛠 Built With <a name="built-with"></a>
+Built With
+- React
+- Linters
+- Tailwind CSS
+- Jest
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -164,6 +169,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+Prerequisites
+
+- IDE (VSCode is suggested.)
+- Node installed and configured.
+- Git installed and configured.
+
+Setup
+
+- Clone the repository.
+- Open the project folder in your IDE.
+- Run the commands specified above
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -192,17 +208,19 @@ Feel free to check the [issues page](https://github.com/AlexisJW/react-math-magi
 
 ## ⭐️ Show your support <a name="#support"></a>
 
-If you like this project...
+Give a ⭐️ if you like this project!...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
+🙏 Acknowledgments
+
+I would like to thank Microverse.
 
 ## ❓ FAQ (OPTIONAL) <a name="#faq"></a>
 
 - **What is this for?**
 
-  - This is an app used to learn to send, receive data from an API, use API documentation, understand and use JSON and make JavaScript code asynchronous.
+  - "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.
 
 - **Can i copy this project?**
 
