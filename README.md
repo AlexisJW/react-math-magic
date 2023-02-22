@@ -1,7 +1,7 @@
 ﻿![](https://img.shields.io/badge/Academic-blue)
 ![](https://img.shields.io/badge/HTML-red)
 ![](https://img.shields.io/badge/JavaScript-yellow)
-
+![](https://img.shields.io/badge/React-yellow)
 
   <h3><b>README FILE</b></h3>
 
@@ -68,7 +68,7 @@ By building this application, you will learn how to use React.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link, Not Available]()
+- [Live Demo Link](https://react-math-magic-git-full-website-alexisjw.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
