@@ -62,8 +62,8 @@ Built With
 
 ### Key Features <a name="key-features"></a>
 
-- **[GIT FLOW]**
-- **[Good HTML, JS and CSS practices]**
+- **[Create React App]**
+- **[Components testing]**
 - **[Dynamically]**
 - **[Refactor with hooks]**
 
